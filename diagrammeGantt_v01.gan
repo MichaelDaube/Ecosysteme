@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Projet Ecosysteme diagramme Gantt" company="" webLink="http://" view-date="2018-11-04" view-index="0" gantt-divider-location="415" resource-divider-location="322" version="2.8.9" locale="fr">
+    <description>
+        <![CDATA[Simulation d'un écosystème dans lequel vivent des individus liés par une relation de type prédateur-proie, puis observation de l'évolution des populations au cours du temps. ]]>
+    </description>
+    <view zooming-state="default:7" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="138" order="0"/>
+        <field id="tpd4" name="Date de début" width="62" order="1"/>
+        <field id="tpd5" name="Date de fin" width="62" order="2"/>
+        <field id="tpd6" name="Durée" width="47" order="3"/>
+        <field id="tpd7" name="Avancée" width="48" order="4"/>
+        <field id="tpd10" name="ID" width="28" order="5"/>
+        <field id="tpd2" name="Alertes" width="26" order="6"/>
+        <option id="taskLabelDown" value="name"/>
+        <option id="color.recent">
+            <![CDATA[#ff9900 #ff3333]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="221" order="0"/>
+        <field id="1" name="Rôle par défaut" width="97" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="0" mon="0" tue="0" wed="0" thu="0" fri="0" sat="0"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="99" name="Mise en place" meeting="false" start="2018-12-06" duration="4" complete="55" expand="true">
+            <depend id="100" type="1" difference="0" hardness="Strong"/>
+            <task id="0" name="Roadmap" color="#8cb6ce" meeting="false" start="2018-12-06" duration="1" complete="100" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Rédaction de la roadmap
+]]>
+                </notes>
+                <depend id="5" type="1" difference="0" hardness="Strong"/>
+            </task>
+            <task id="5" name="Gantt" color="#8cb6ce" meeting="false" start="2018-12-06" duration="1" complete="100" thirdDate="2018-12-06" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Construction d'un diagramme de Gant basique
+]]>
+                </notes>
+                <depend id="6" type="1" difference="0" hardness="Strong"/>
+            </task>
+            <task id="6" name="Installations" color="#8cb6ce" meeting="false" start="2018-12-06" duration="4" complete="33" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[installation des logiciels : Modelio pour les diagrammes UML, environnement de développement en python, création d'un compte sur GitHub]]>
+                </notes>
+                <depend id="2" type="1" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="100" name="Version alpha" color="#000000" meeting="false" start="2018-12-06" duration="48" complete="0" thirdDate="2018-12-06" thirdDate-constraint="0" expand="false">
+            <depend id="101" type="2" difference="0" hardness="Strong"/>
+            <task id="2" name="UML" color="#8cb6ce" meeting="false" start="2018-12-06" duration="4" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Construction sommaire pour réflexion et approfondissement]]>
+                </notes>
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="8" name="UML" color="#8cb6ce" meeting="false" start="2018-12-10" duration="6" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Reflexion puis complétion du diagramme UML en vue de réaliser la verions alpha de l'ecosystème]]>
+                </notes>
+                <depend id="10" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="10" name="Répartition" color="#8cb6ce" meeting="false" start="2018-12-16" duration="1" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[répartition des classes à coder entre les membres de l'équipe]]>
+                </notes>
+                <depend id="12" type="1" difference="0" hardness="Strong"/>
+                <depend id="14" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="12" name="Gantt" color="#8cb6ce" meeting="false" start="2018-12-16" duration="1" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Mise à jour du diagramme de Gantt avec prise en compte de la répartition des tâches pour la version alpha]]>
+                </notes>
+            </task>
+            <task id="14" name="Code" color="#8cb6ce" meeting="false" start="2018-12-17" duration="21" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Rédaction du code des classes de la version alpha]]>
+                </notes>
+                <depend id="16" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="16" name="Tests" color="#8cb6ce" meeting="false" start="2019-01-07" duration="13" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Mise en commun des codes, essais du programme dans son intégralité, repérage des erreurs, réflexion et discussions pour correction.]]>
+                </notes>
+                <depend id="18" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="18" name="Relecture" color="#8cb6ce" meeting="false" start="2019-01-20" duration="2" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Attention portée à la clarté du code, à la documentation et aux commentaires]]>
+                </notes>
+                <depend id="21" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="21" name="Envoi" color="#ff3333" meeting="false" start="2019-01-22" duration="1" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Envoi de la version alpha]]>
+                </notes>
+                <depend id="23" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="101" name="Version bêta" color="#000000" meeting="false" start="2019-01-23" duration="53" complete="0" thirdDate="2019-01-23" thirdDate-constraint="0" expand="false">
+            <depend id="102" type="2" difference="0" hardness="Strong"/>
+            <task id="23" name="UML" color="#8cb6ce" meeting="false" start="2019-01-23" duration="5" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Modification du diagramme UML pour intégrer les ajouts apportés par la version bêta]]>
+                </notes>
+                <depend id="28" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="28" name="Répartition" color="#8cb6ce" meeting="false" start="2019-01-28" duration="1" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[répartition des classes à coder entre les membres de l'équipe]]>
+                </notes>
+                <depend id="31" type="1" difference="0" hardness="Strong"/>
+                <depend id="34" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="31" name="Gantt" color="#8cb6ce" meeting="false" start="2019-01-28" duration="1" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Mise à jour du diagramme de Gantt avec prise en compte de la répartition des tâches pour la version bêta]]>
+                </notes>
+            </task>
+            <task id="34" name="Code" color="#8cb6ce" meeting="false" start="2019-01-29" duration="34" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Rédaction du code des classes de la version bêta]]>
+                </notes>
+                <depend id="37" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="37" name="Tests" color="#8cb6ce" meeting="false" start="2019-03-04" duration="10" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Mise en commun des codes, essais du programme dans son intégralité, repérage des erreurs, réflexion et discussions pour correction.]]>
+                </notes>
+                <depend id="40" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="40" name="Relecture" color="#8cb6ce" meeting="false" start="2019-03-14" duration="2" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Attention portée à la clarté du code, à la documentation et aux commentaires]]>
+                </notes>
+                <depend id="43" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="43" name="Envoi" color="#ff3333" meeting="false" start="2019-03-16" duration="1" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Envoi de la version bêta]]>
+                </notes>
+                <depend id="45" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="102" name="Version pré-prod" color="#000000" meeting="false" start="2019-03-17" duration="46" complete="0" thirdDate="2019-03-17" thirdDate-constraint="0" expand="false">
+            <depend id="103" type="2" difference="0" hardness="Strong"/>
+            <task id="45" name="Réflexion" color="#8cb6ce" meeting="false" start="2019-03-17" duration="5" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Recherche de pistes d'amélioration de la simulation et d'ajouts autres que l'implémentation de comportements prévus dans la description. ]]>
+                </notes>
+                <depend id="49" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="49" name="UML" color="#8cb6ce" meeting="false" start="2019-03-22" duration="6" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Modification du diagramme UML pour intégrer les ajouts apportés par la version finale]]>
+                </notes>
+                <depend id="51" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="51" name="Répartition" color="#8cb6ce" meeting="false" start="2019-03-28" duration="1" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[répartition des classes à coder entre les membres de l'équipe]]>
+                </notes>
+                <depend id="53" type="1" difference="0" hardness="Strong"/>
+                <depend id="55" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="53" name="Gantt" color="#8cb6ce" meeting="false" start="2019-03-28" duration="1" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Mise à jour du diagramme de Gantt avec prise en compte de la répartition des tâches pour la version finale.]]>
+                </notes>
+            </task>
+            <task id="55" name="Code" color="#8cb6ce" meeting="false" start="2019-03-29" duration="24" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Rédaction du code des classes de la version finale.]]>
+                </notes>
+                <depend id="57" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="57" name="Tests" color="#8cb6ce" meeting="false" start="2019-04-22" duration="8" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Mise en commun des codes, essais du programme dans son intégralité, repérage des erreurs, réflexion et discussions pour correction.]]>
+                </notes>
+                <depend id="59" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="59" name="Relecture" color="#8cb6ce" meeting="false" start="2019-04-30" duration="1" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Attention portée à la clarté du code, à la documentation et aux commentaires]]>
+                </notes>
+                <depend id="61" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="61" name="Envoi" color="#ff3333" meeting="false" start="2019-05-01" duration="1" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Envoi de la version pre-prod.
+]]>
+                </notes>
+                <depend id="73" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="103" name="Version finale" color="#000000" meeting="false" start="2019-05-02" duration="22" complete="0" thirdDate="2019-05-02" thirdDate-constraint="0" expand="false">
+            <task id="73" name="Rapports" color="#8cb6ce" meeting="false" start="2019-05-02" duration="12" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Mise en commun des rapports pour relecture et rédaction du rapport final.]]>
+                </notes>
+                <depend id="75" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="75" name="Finalisation" color="#8cb6ce" meeting="false" start="2019-05-14" duration="9" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Relecture du rapport final et préparation des fichiers à rendre.]]>
+                </notes>
+                <depend id="77" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="77" name="Envoi" color="#ff3333" meeting="false" start="2019-05-23" duration="1" complete="0" thirdDate="2018-11-26" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Envoi de la version finale du projet
+]]>
+                </notes>
+            </task>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="2" name="Michael DAUBE" function="Default:1" contacts="michael.daube@etu.univ-amu.fr" phone=""/>
+        <resource id="0" name="Patrick HARTMANN" function="1" contacts="patrick.hartmann@etu.univ-amu.fr" phone=""/>
+        <resource id="1" name="Charlène PIOT" function="2" contacts="charlene.piot@etu.univ-amu.fr" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="2" function="Default:1" responsible="true" load="33.3"/>
+        <allocation task-id="5" resource-id="2" function="Default:1" responsible="true" load="33.3"/>
+        <allocation task-id="6" resource-id="2" function="Default:1" responsible="true" load="33.4"/>
+        <allocation task-id="2" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="2" function="Default:1" responsible="true" load="50.0"/>
+        <allocation task-id="12" resource-id="2" function="Default:1" responsible="true" load="50.0"/>
+        <allocation task-id="14" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="16" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="18" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="21" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="23" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="28" resource-id="2" function="Default:1" responsible="true" load="50.0"/>
+        <allocation task-id="31" resource-id="2" function="Default:1" responsible="true" load="50.0"/>
+        <allocation task-id="34" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="37" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="40" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="43" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="45" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="49" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="51" resource-id="2" function="Default:1" responsible="true" load="50.0"/>
+        <allocation task-id="53" resource-id="2" function="Default:1" responsible="true" load="50.0"/>
+        <allocation task-id="55" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="57" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="59" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="61" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="73" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="75" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="77" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="0" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="0" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="10" resource-id="0" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="14" resource-id="0" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="0" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="18" resource-id="0" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="23" resource-id="0" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="28" resource-id="0" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="34" resource-id="0" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="37" resource-id="0" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="40" resource-id="0" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="45" resource-id="0" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="49" resource-id="0" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="51" resource-id="0" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="55" resource-id="0" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="57" resource-id="0" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="59" resource-id="0" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="73" resource-id="0" function="1" responsible="false" load="30.0"/>
+        <allocation task-id="75" resource-id="0" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="6" resource-id="1" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="10" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="14" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="18" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="23" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="28" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="34" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="37" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="40" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="45" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="49" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="51" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="55" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="57" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="59" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="73" resource-id="1" function="2" responsible="false" load="30.0"/>
+        <allocation task-id="75" resource-id="1" function="2" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous>
+        <previous-tasks name="Initialisation">
+            <previous-task id="99" start="2018-12-06" duration="4" meeting="false" super="true"/>
+            <previous-task id="0" start="2018-12-06" duration="1" meeting="false" super="false"/>
+            <previous-task id="5" start="2018-12-06" duration="1" meeting="false" super="false"/>
+            <previous-task id="6" start="2018-12-06" duration="4" meeting="false" super="false"/>
+            <previous-task id="100" start="2018-12-06" duration="48" meeting="false" super="true"/>
+            <previous-task id="2" start="2018-12-06" duration="4" meeting="false" super="false"/>
+            <previous-task id="8" start="2018-12-10" duration="6" meeting="false" super="false"/>
+            <previous-task id="10" start="2018-12-16" duration="1" meeting="false" super="false"/>
+            <previous-task id="12" start="2018-12-16" duration="1" meeting="false" super="false"/>
+            <previous-task id="14" start="2018-12-17" duration="21" meeting="false" super="false"/>
+            <previous-task id="16" start="2019-01-07" duration="13" meeting="false" super="false"/>
+            <previous-task id="18" start="2019-01-20" duration="2" meeting="false" super="false"/>
+            <previous-task id="21" start="2019-01-22" duration="1" meeting="false" super="false"/>
+            <previous-task id="101" start="2019-01-23" duration="53" meeting="false" super="true"/>
+            <previous-task id="23" start="2019-01-23" duration="5" meeting="false" super="false"/>
+            <previous-task id="28" start="2019-01-28" duration="1" meeting="false" super="false"/>
+            <previous-task id="31" start="2019-01-28" duration="1" meeting="false" super="false"/>
+            <previous-task id="34" start="2019-01-29" duration="34" meeting="false" super="false"/>
+            <previous-task id="37" start="2019-03-04" duration="10" meeting="false" super="false"/>
+            <previous-task id="40" start="2019-03-14" duration="2" meeting="false" super="false"/>
+            <previous-task id="43" start="2019-03-16" duration="1" meeting="false" super="false"/>
+            <previous-task id="102" start="2019-03-17" duration="46" meeting="false" super="true"/>
+            <previous-task id="45" start="2019-03-17" duration="5" meeting="false" super="false"/>
+            <previous-task id="49" start="2019-03-22" duration="6" meeting="false" super="false"/>
+            <previous-task id="51" start="2019-03-28" duration="1" meeting="false" super="false"/>
+            <previous-task id="53" start="2019-03-28" duration="1" meeting="false" super="false"/>
+            <previous-task id="55" start="2019-03-29" duration="24" meeting="false" super="false"/>
+            <previous-task id="57" start="2019-04-22" duration="8" meeting="false" super="false"/>
+            <previous-task id="59" start="2019-04-30" duration="1" meeting="false" super="false"/>
+            <previous-task id="61" start="2019-05-01" duration="1" meeting="false" super="false"/>
+            <previous-task id="103" start="2019-05-02" duration="22" meeting="false" super="true"/>
+            <previous-task id="73" start="2019-05-02" duration="12" meeting="false" super="false"/>
+            <previous-task id="75" start="2019-05-14" duration="9" meeting="false" super="false"/>
+            <previous-task id="77" start="2019-05-23" duration="1" meeting="false" super="false"/>
+        </previous-tasks>
+    </previous>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="Equipier1"/>
+        <role id="2" name="Equipier2"/>
+    </roles>
+</project>
